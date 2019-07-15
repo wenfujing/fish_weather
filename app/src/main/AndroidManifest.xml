@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mywork.myapplication">
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!--允许网络通信-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <!-- 往SDCard写入数据权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+
+    <uses-permission android:name="android.permission.READ_SMS"/>
+
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+<!--允许打电话权限-->
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- 屏幕适配 -->
+    <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:anyDensity = "true"/>
+    <!--android:name=".weather_station.myApplication"-->
+    <application
+        android:name=".weather_station.myApplication"
+        android:allowBackup="true"
+        android:usesCleartextTraffic="true"
+        android:icon="@mipmap/icons"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/test"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".login.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".login.RegisterActivity" />
+        <activity android:name=".Fishing_Forest.Fishing_ForestActivity" />
+        <activity android:name=".login.LostFindActivity" />
+        <activity android:name=".weather_station.Weather_StationActivity" />
+        <activity android:name=".weather_station.ExpertSystem" />
+        <activity android:name=".weather_station.PersonalDate" />
+        <activity android:name=".weather_station.BaseActivity" />
+        <activity android:name=".weather_station.ScanWeather_Station" />
+        <activity android:name=".login.AgreementActivity" />
+        <activity android:name=".common.HeadActivity" />
+        <activity android:name=".common.book_info" />
+        <activity android:name=".common.book_list" />
+        <activity android:name=".common.search" />
+        <activity android:name=".setting.cancel" />
+        <activity android:name=".setting.setting" />
+        <activity android:name=".setting.contact" />
+        <activity android:name=".setting.createbook" />
+        <activity android:name=".weather_station.UsernameChange" />
+        <activity android:name=".common.SystemSettingActivity" />
+        <activity android:name=".setting.photo" />
+
+
+    </application>
+
+</manifest>

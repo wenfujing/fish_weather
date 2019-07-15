@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <FrameLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#99CCFF"
+        >
+        
+        <ImageView 
+            android:id="@+id/imgLeft"
+       		android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_gravity="center_vertical"
+       		android:src="@mipmap/toleft"
+           >
+        </ImageView>
+    </FrameLayout>
+
+	    <RelativeLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+	
+	        <ImageView
+	            android:id="@+id/imgicon"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentLeft="true"
+	            android:layout_marginLeft="100dp"
+	            android:src="@mipmap/zhuanjia" />
+	
+	        <Spinner
+	            android:id="@+id/spinner1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="2dp"
+	            android:layout_toRightOf="@+id/imgicon"
+	            android:entries="@array/ftype" />
+	
+	        <TextView
+	            android:id="@+id/TextShow"
+	            android:layout_width="300px"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@+id/spinner1"
+	            android:layout_centerInParent="true"
+	            android:layout_marginTop="50px"
+	            android:gravity="center" />
+	
+	        <Button
+	            android:id="@+id/btnExpertAdvice"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@+id/TextShow"
+	            android:layout_centerInParent="true"
+	            android:layout_marginTop="50px"
+	            android:text="安全数据区间设置" />
+	    </RelativeLayout>
+
+		<ScrollView 
+	        android:id="@+id/scrollView1"
+	        android:layout_width="match_parent"
+	      	android:layout_height="match_parent"
+	            >
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:orientation="vertical">
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:orientation="horizontal"
+					>
+
+					<ImageView
+						android:layout_width="173dp"
+						android:layout_height="wrap_content"
+						android:src="@mipmap/qixiangzhan1" />
+
+					<ImageView
+						android:layout_width="wrap_content"
+						android:layout_height="293dp"
+						android:src="@mipmap/timg" />
+				</LinearLayout>
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="  	便携式气象站是一款便于携带，使用方便，测量精度高，集
+					成多项气象要素的可移动观测系统。该系统采用新型一体化结构设计，做工精良，可采集温度、
+					湿度、风向、风速、太阳辐射、雨量、气压、光照度、土壤温度、土壤湿度、露点等多项信息并做公
+					告和趋势分析，该系统分有线站和无线站两种形式，配合软件更可以实现网络远程数据传输和网络实时
+					气象状况监测，是一款性价比突出的小型自动气象站。"/>
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="		种类：1.气候观测站:分为基准气候站、基本气候站、一般气候站、辅助气候站四种类型。
+					2.地面天气观测站:担负定时地面天气观测并实时发报,提供给天气分析预报使用。一般由基准气候站和基本气候站承担其任务。
+					3.高空观测站:分探空站和测风站两种。
+					4.航空天气观测站:主要提供军事和民航安全飞行所需要的航空天气预报和危险天气通报。绝大多数地面天气站和部分一般气候站承担其任务。
+					5.农业气象观测站:分农业气象试验站、基本农业气象站、一般农业气象站三级。
+					6.太阳辐射观测站:分一级、二级太阳辐射观测站。
+					7.天气雷达观测站。
+					8.卫星云图接收站。
+					9.大气本底及污染观测站:分基准站和区域站。
+					10.降水酸碱度分析站:由部分气候观测站承担其任务。"/>
+			</LinearLayout>
+
+
+    	</ScrollView>
+    
+</LinearLayout>

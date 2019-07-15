@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#99CCFF"
+    >
+    
+	<LinearLayout
+		  android:id="@+id/setPager"
+		  android:layout_width="match_parent"
+		  android:layout_height="wrap_content"
+		  android:orientation="vertical"
+		  android:layout_alignParentBottom="true"
+		   >
+		
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:layout_marginTop="30dp"
+			android:layout_marginLeft="10dp"
+			android:layout_marginRight="10dp"
+	        >
+
+	        <TextView
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="center_horizontal"
+	            android:text="智能远程控制"
+	            android:textSize="26dp" />
+
+	    </LinearLayout>
+		
+		  <LinearLayout
+			  android:layout_width="match_parent"
+			  android:layout_height="wrap_content"
+			  android:orientation="horizontal"
+			  android:layout_marginTop="80dp"
+			  android:layout_marginLeft="10dp"
+			  android:layout_marginRight="10dp"
+		  	   >
+		     <RelativeLayout 
+		           android:layout_width="wrap_content"
+			 	   android:layout_height="wrap_content"
+		           >
+			    
+			     <Switch
+				    android:id="@+id/switch1_changeWater"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:text="网络连接"
+				    android:textSize="20dp"
+				     />
+			     <Switch
+				    android:id="@+id/switch2_addWater"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_toRightOf="@+id/switch1_changeWater"
+				    android:text="WIFI设置"
+				    android:textSize="20dp"
+				     />
+			     
+		     </RelativeLayout>
+		 </LinearLayout>
+		    
+		   
+		  <LinearLayout
+			  android:layout_width="match_parent"
+			  android:layout_height="wrap_content"
+			  android:orientation="horizontal"
+			  android:layout_marginTop="60dp"
+			  android:layout_marginLeft="10dp"
+			  android:layout_marginRight="10dp"
+		  	 >
+		     <RelativeLayout 
+		           android:layout_width="wrap_content"
+			 	   android:layout_height="wrap_content"
+		           >
+			    
+			     <Switch
+				    android:id="@+id/switch3_outWater"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:text="打开水阀"
+				    android:textSize="20dp"
+				     />
+			     <Switch
+				    android:id="@+id/switch4_feeding"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_toRightOf="@+id/switch3_outWater"
+				    android:text="用户模式"
+				    android:textSize="20dp"
+				     />
+			     
+		     </RelativeLayout>
+		 </LinearLayout>
+		
+		    
+      
+		  
+		
+		  <LinearLayout
+			  android:layout_width="match_parent"
+			  android:layout_height="wrap_content"
+			  android:orientation="horizontal"
+			  android:layout_marginTop="60dp"
+			  android:layout_marginLeft="10dp"
+			  android:layout_marginRight="10dp"
+		  	 >
+		     <RelativeLayout 
+		           android:layout_width="wrap_content"
+			 	   android:layout_height="wrap_content"
+		           >
+			    
+			    <!-- <Switch
+				    android:id="@+id/switch5_Turnon_light"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:text="远程操作"
+				    android:textSize="20dp"
+				     />
+			     <Switch
+				    android:id="@+id/switch6_addWarming"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_toRightOf="@+id/switch5_Turnon_light"
+				    android:text="0000："
+				    android:textSize="20dp"
+				     />-->
+			     
+		     </RelativeLayout>
+		   </LinearLayout>
+	</LinearLayout>
+	 
+</LinearLayout>

@@ -1,0 +1,879 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TableLayout
+                android:id="@+id/llt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imghead1"
+                android:layout_centerInParent="true"
+                android:layout_margin="1dp"
+                android:layout_marginTop="130dp"
+                android:background="#000000" >
+
+                <!-- 第一条数据 -->
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <LinearLayout
+                            android:id="@+id/lltTemp1"
+                            android:layout_width="100dp"
+                            android:layout_height="80dp"
+                            android:layout_marginRight="1dp"
+                            android:layout_weight="1"
+                            android:background="#99CCFF" >
+
+                            <TextView
+                                android:id="@+id/text1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="80dp"
+                                android:layout_marginLeft="15dp"
+                                android:gravity="center_vertical"
+                                android:text="空气温度(℃)："
+                                android:textSize="20dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lltTemp2"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="2"
+                            android:background="#99CCFF" 
+                            android:layout_toRightOf="@+id/lltTemp1"
+                            >
+
+                            <TextView
+                                android:layout_width="80dp"
+                                android:layout_height="40dp"
+                                android:gravity="center"
+                                android:text="最高"
+                                 />
+                        </LinearLayout>
+                        
+                        <LinearLayout
+                            android:id="@+id/lltTemp4"
+                            android:layout_width="136dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="2"
+                            android:background="#99CCFF" 
+                            android:layout_toRightOf="@+id/lltTemp2"
+                            >
+
+                            <EditText
+                                android:id="@+id/editHighTemp"
+                                android:layout_width="80dp"
+                                android:layout_height="40dp"
+                                android:gravity="center"
+                                android:text="最高"
+                                 />
+                        </LinearLayout>
+                        
+                        <LinearLayout
+                            android:id="@+id/lltTemp5"
+                            android:layout_width="136dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="2"
+                            android:background="#99CCFF" 
+                            android:layout_toRightOf="@+id/lltTemp3"
+                            android:layout_below="@+id/lltTemp4"
+                            >
+
+                            <EditText
+                                android:id="@+id/editLowTemp"
+                                android:layout_width="80dp"
+                                android:layout_height="40dp"
+                                android:gravity="center"
+                                android:text="最低"
+                                 />
+                        </LinearLayout>
+                        
+                        <LinearLayout
+                            android:id="@+id/lltTemp3"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="2"
+                            android:background="#99CCFF" 
+                            android:layout_toRightOf="@+id/lltTemp1"
+                            android:layout_below="@+id/lltTemp2"
+                            >
+
+                            <TextView
+                                android:layout_width="80dp"
+                                android:layout_height="40dp"
+                                android:gravity="center" 
+                                android:text="最低"
+                                />
+                        </LinearLayout>
+                        
+                    </RelativeLayout>
+                </TableRow>
+
+                <!-- 第二条数据 -->
+
+                <TableRow
+                    android:id="@+id/tableRow2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <LinearLayout
+                            android:id="@+id/lltPh1"
+                            android:layout_width="100dp"
+                            android:layout_height="80dp"
+                            android:layout_marginRight="1dp"
+                            android:layout_weight="1"
+                            android:background="#99CCFF" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="80dp"
+                                android:layout_marginLeft="15dp"
+                                android:gravity="center_vertical"
+                                android:text="土壤温度(℃)："
+                                android:textSize="20dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lltPh2"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="2"
+                            android:background="#99CCFF" 
+                            android:layout_toRightOf="@+id/lltPh1"
+                            >
+
+                            <TextView
+                                android:layout_width="80dp"
+                                android:layout_height="40dp"
+                                android:gravity="center"
+                                android:text="最高"
+                                 />
+                        </LinearLayout>
+                        
+                        <LinearLayout
+                            android:id="@+id/lltPh4"
+                            android:layout_width="136dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="2"
+                            android:background="#99CCFF" 
+                            android:layout_toRightOf="@+id/lltPh2"
+                            >
+
+                            <EditText
+                                android:id="@+id/editHighPh"
+                                android:layout_width="80dp"
+                                android:layout_height="40dp"
+                                android:gravity="center"
+                                android:text="最高"
+                                 />
+                        </LinearLayout>
+                        
+                        <LinearLayout
+                            android:id="@+id/lltPh5"
+                            android:layout_width="136dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="2"
+                            android:background="#99CCFF" 
+                            android:layout_toRightOf="@+id/lltPh3"
+                            android:layout_below="@+id/lltPh4"
+                            >
+
+                            <EditText
+                                android:id="@+id/editLowPh"
+                                android:layout_width="80dp"
+                                android:layout_height="40dp"
+                                android:gravity="center"
+                                android:text="最低"
+                                 />
+                        </LinearLayout>
+                        
+                        <LinearLayout
+                            android:id="@+id/lltPh3"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="2"
+                            android:background="#99CCFF" 
+                            android:layout_toRightOf="@+id/lltPh1"
+                            android:layout_below="@+id/lltPh2"
+                            >
+
+                            <TextView
+                                android:layout_width="80dp"
+                                android:layout_height="40dp"
+                                android:gravity="center" 
+                                android:text="最低"
+                                />
+                        </LinearLayout>
+                        
+                    </RelativeLayout>
+                    
+                   
+                </TableRow>
+                <!-- 第三条数据 -->
+                <TableRow
+                    android:id="@+id/tableRow3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <LinearLayout
+                            android:id="@+id/lltWater1"
+                            android:layout_width="100dp"
+                            android:layout_height="80dp"
+                            android:layout_marginRight="1dp"
+                            android:layout_weight="1"
+                            android:background="#99CCFF" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="80dp"
+                                android:layout_marginLeft="15dp"
+                                android:gravity="center_vertical"
+                                android:text="空气湿度%RH"
+                                android:textSize="20dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lltWater2"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="2"
+                            android:background="#99CCFF"
+                            android:layout_toRightOf="@+id/lltWater1"
+                            >
+
+                            <TextView
+                                android:layout_width="80dp"
+                                android:layout_height="40dp"
+                                android:gravity="center"
+                                android:text="最高"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lltWater4"
+                            android:layout_width="136dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="2"
+                            android:background="#99CCFF"
+                            android:layout_toRightOf="@+id/lltWater2"
+                            >
+
+                            <EditText
+                                android:id="@+id/editHighWater"
+                                android:layout_width="80dp"
+                                android:layout_height="40dp"
+                                android:gravity="center"
+                                android:text="最高"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lltWater5"
+                            android:layout_width="136dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="2"
+                            android:background="#99CCFF"
+                            android:layout_toRightOf="@+id/lltWater3"
+                            android:layout_below="@+id/lltWater4"
+                            >
+
+                            <EditText
+                                android:id="@+id/editLowWater"
+                                android:layout_width="80dp"
+                                android:layout_height="40dp"
+                                android:gravity="center"
+                                android:text="最低"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lltWater3"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="2"
+                            android:background="#99CCFF"
+                            android:layout_toRightOf="@+id/lltWater1"
+                            android:layout_below="@+id/lltWater2"
+                            >
+
+                            <TextView
+                                android:layout_width="80dp"
+                                android:layout_height="40dp"
+                                android:gravity="center"
+                                android:text="最低"
+                                />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+                </TableRow>
+
+                <!-- 第四条数据 -->
+                <TableRow
+                    android:id="@+id/tableRow4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <LinearLayout
+                            android:id="@+id/soil_temper1"
+                            android:layout_width="100dp"
+                            android:layout_height="80dp"
+                            android:layout_marginRight="1dp"
+                            android:layout_weight="1"
+                            android:background="#99CCFF" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="80dp"
+                                android:layout_marginLeft="15dp"
+                                android:gravity="center_vertical"
+                                android:text="土壤湿度%RH"
+                                android:textSize="20dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/soil_temper2"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="2"
+                            android:background="#99CCFF"
+                            android:layout_toRightOf="@+id/soil_temper1"
+                            >
+
+                            <TextView
+                                android:layout_width="80dp"
+                                android:layout_height="40dp"
+                                android:gravity="center"
+                                android:text="最高"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/soil_temper4"
+                            android:layout_width="136dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="2"
+                            android:background="#99CCFF"
+                            android:layout_toRightOf="@+id/soil_temper2"
+                            >
+
+                            <EditText
+                                android:id="@+id/editHighsoil_temper"
+                                android:layout_width="80dp"
+                                android:layout_height="40dp"
+                                android:gravity="center"
+                                android:text="最高"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/soil_temper5"
+                            android:layout_width="136dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="2"
+                            android:background="#99CCFF"
+                            android:layout_toRightOf="@+id/soil_temper3"
+                            android:layout_below="@+id/soil_temper4"
+                            >
+
+                            <EditText
+                                android:id="@+id/editLowsoil_temper"
+                                android:layout_width="80dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="最低" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/soil_temper3"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="2"
+                            android:background="#99CCFF"
+                            android:layout_toRightOf="@+id/soil_temper1"
+                            android:layout_below="@+id/soil_temper2"
+                            >
+
+                            <TextView
+                                android:layout_width="80dp"
+                                android:layout_height="40dp"
+                                android:gravity="center"
+                                android:text="最低"
+                                />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+                </TableRow>
+
+                <!-- 第5条数据 -->
+                <TableRow
+                    android:id="@+id/tableRow5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <LinearLayout
+                            android:id="@+id/oxygen1"
+                            android:layout_width="100dp"
+                            android:layout_height="80dp"
+                            android:layout_marginRight="1dp"
+                            android:layout_weight="1"
+                            android:background="#99CCFF" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="80dp"
+                                android:layout_marginLeft="15dp"
+                                android:gravity="center_vertical"
+                                android:text="氧气浓度%"
+                                android:textSize="20dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/oxygen2"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="2"
+                            android:background="#99CCFF"
+                            android:layout_toRightOf="@+id/oxygen1"
+                            >
+
+                            <TextView
+                                android:layout_width="80dp"
+                                android:layout_height="40dp"
+                                android:gravity="center"
+                                android:text="最高"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/oxygen4"
+                            android:layout_width="136dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="2"
+                            android:background="#99CCFF"
+                            android:layout_toRightOf="@+id/oxygen2"
+                            >
+
+                            <EditText
+                                android:id="@+id/editHighoxygen"
+                                android:layout_width="80dp"
+                                android:layout_height="40dp"
+                                android:gravity="center"
+                                android:text="最高"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/oxygen5"
+                            android:layout_width="136dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="2"
+                            android:background="#99CCFF"
+                            android:layout_toRightOf="@+id/oxygen3"
+                            android:layout_below="@+id/oxygen4"
+                            >
+
+                            <EditText
+                                android:id="@+id/editLowoxygen"
+                                android:layout_width="80dp"
+                                android:layout_height="40dp"
+                                android:gravity="center"
+                                android:text="最低"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/oxygen3"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="2"
+                            android:background="#99CCFF"
+                            android:layout_toRightOf="@+id/oxygen1"
+                            android:layout_below="@+id/oxygen2"
+                            >
+
+                            <TextView
+                                android:layout_width="80dp"
+                                android:layout_height="40dp"
+                                android:gravity="center"
+                                android:text="最低"
+                                />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+                </TableRow>
+
+                <!-- 第6条数据 -->
+                <TableRow
+                    android:id="@+id/tableRow6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <LinearLayout
+                            android:id="@+id/waterlevel1"
+                            android:layout_width="100dp"
+                            android:layout_height="80dp"
+                            android:layout_marginRight="1dp"
+                            android:layout_weight="1"
+                            android:background="#99CCFF" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="80dp"
+                                android:layout_marginLeft="15dp"
+                                android:gravity="center_vertical"
+                                android:text="降雨量mm"
+                                android:textSize="20dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/waterlevel2"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="2"
+                            android:background="#99CCFF"
+                            android:layout_toRightOf="@+id/waterlevel1"
+                            >
+
+                            <TextView
+                                android:layout_width="80dp"
+                                android:layout_height="40dp"
+                                android:gravity="center"
+                                android:text="最高"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/waterlevel4"
+                            android:layout_width="136dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="2"
+                            android:background="#99CCFF"
+                            android:layout_toRightOf="@+id/waterlevel2"
+                            >
+
+                            <EditText
+                                android:id="@+id/editHighwaterlevel"
+                                android:layout_width="80dp"
+                                android:layout_height="40dp"
+                                android:gravity="center"
+                                android:text="最高"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/waterlevel5"
+                            android:layout_width="136dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="2"
+                            android:background="#99CCFF"
+                            android:layout_toRightOf="@+id/waterlevel3"
+                            android:layout_below="@+id/waterlevel4"
+                            >
+
+                            <EditText
+                                android:id="@+id/editLowwaterlevel"
+                                android:layout_width="80dp"
+                                android:layout_height="40dp"
+                                android:gravity="center"
+                                android:text="最低"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/waterlevel3"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="2"
+                            android:background="#99CCFF"
+                            android:layout_toRightOf="@+id/waterlevel1"
+                            android:layout_below="@+id/waterlevel2"
+                            >
+
+                            <TextView
+                                android:layout_width="80dp"
+                                android:layout_height="40dp"
+                                android:gravity="center"
+                                android:text="最低"
+                                />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+                </TableRow>
+
+                <!-- 第7条数据 -->
+                <TableRow
+                    android:id="@+id/tableRow7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <LinearLayout
+                            android:id="@+id/light1"
+                            android:layout_width="100dp"
+                            android:layout_height="80dp"
+                            android:layout_marginRight="1dp"
+                            android:layout_weight="1"
+                            android:background="#99CCFF" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="80dp"
+                                android:layout_marginLeft="15dp"
+                                android:gravity="center_vertical"
+                                android:text="光照Lux"
+                                android:textSize="20dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/light2"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="2"
+                            android:background="#99CCFF"
+                            android:layout_toRightOf="@+id/light1"
+                            >
+
+                            <TextView
+                                android:layout_width="80dp"
+                                android:layout_height="40dp"
+                                android:gravity="center"
+                                android:text="最高"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/light4"
+                            android:layout_width="136dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="2"
+                            android:background="#99CCFF"
+                            android:layout_toRightOf="@+id/light2"
+                            >
+
+                            <EditText
+                                android:id="@+id/editHighlight"
+                                android:layout_width="80dp"
+                                android:layout_height="40dp"
+                                android:gravity="center"
+                                android:text="最高"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/light5"
+                            android:layout_width="136dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="2"
+                            android:background="#99CCFF"
+                            android:layout_toRightOf="@+id/light3"
+                            android:layout_below="@+id/light4"
+                            >
+
+                            <EditText
+                                android:id="@+id/editLowlight"
+                                android:layout_width="80dp"
+                                android:layout_height="40dp"
+                                android:gravity="center"
+                                android:text="最低"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/light3"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="2"
+                            android:background="#99CCFF"
+                            android:layout_toRightOf="@+id/light1"
+                            android:layout_below="@+id/light2"
+                            >
+
+                            <TextView
+                                android:layout_width="80dp"
+                                android:layout_height="40dp"
+                                android:gravity="center"
+                                android:text="最低"
+                                />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+                </TableRow>
+
+                <!-- 第8条数据 -->
+                <TableRow
+                    android:id="@+id/tableRow8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <LinearLayout
+                            android:id="@+id/pressure1"
+                            android:layout_width="100dp"
+                            android:layout_height="80dp"
+                            android:layout_marginRight="1dp"
+                            android:layout_weight="1"
+                            android:background="#99CCFF" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="80dp"
+                                android:layout_marginLeft="15dp"
+                                android:gravity="center_vertical"
+                                android:text="风速m/s"
+                                android:textSize="20dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/pressure2"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="2"
+                            android:background="#99CCFF"
+                            android:layout_toRightOf="@+id/pressure1"
+                            >
+
+                            <TextView
+                                android:layout_width="80dp"
+                                android:layout_height="40dp"
+                                android:gravity="center"
+                                android:text="最高"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/pressure4"
+                            android:layout_width="136dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="2"
+                            android:background="#99CCFF"
+                            android:layout_toRightOf="@+id/pressure2"
+                            >
+
+                            <EditText
+                                android:id="@+id/editHighpressure"
+                                android:layout_width="80dp"
+                                android:layout_height="40dp"
+                                android:gravity="center"
+                                android:text="最高"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/pressure5"
+                            android:layout_width="136dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="2"
+                            android:background="#99CCFF"
+                            android:layout_toRightOf="@+id/pressure3"
+                            android:layout_below="@+id/pressure4"
+                            >
+
+                            <EditText
+                                android:id="@+id/editLowpressure"
+                                android:layout_width="80dp"
+                                android:layout_height="40dp"
+                                android:gravity="center"
+                                android:text="最低"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/pressure3"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="2"
+                            android:background="#99CCFF"
+                            android:layout_toRightOf="@+id/pressure1"
+                            android:layout_below="@+id/pressure2"
+                            >
+
+                            <TextView
+                                android:layout_width="80dp"
+                                android:layout_height="40dp"
+                                android:gravity="center"
+                                android:text="最低"
+                                />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+                </TableRow>
+
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

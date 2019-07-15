@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="128dp">
+
+    <com.example.administrator.read.tongyong.url_imgview
+        android:id="@+id/imageView"
+        android:layout_width="84dp"
+        android:layout_height="112dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <TextView
+        android:id="@+id/BookName"
+        android:layout_width="42dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="16dp"
+        android:text="文章名" />
+
+    <TextView
+        android:id="@+id/authorName"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_marginLeft="144dp"
+        android:layout_marginTop="44dp"
+        android:text="作者" />
+
+    <TextView
+        android:id="@+id/innertext"
+        android:layout_width="220dp"
+        android:layout_height="54dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="70dp"
+        android:text="主要内容简介主要内容简介主要内容简介主要内容简介主要内容简介主要内容简介" />
+</FrameLayout>

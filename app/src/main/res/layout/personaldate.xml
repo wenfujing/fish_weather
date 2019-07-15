@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:orientation="vertical"
+	android:background="#99CCff"
+     >
+    
+    <FrameLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+             >
+
+			<ImageView
+				android:id="@+id/imgLeft"
+				android:layout_width="61dp"
+				android:layout_height="61dp"
+				android:layout_gravity="center_vertical"
+				android:src="@mipmap/toleft" />
+	        <Button 
+	            android:id="@+id/btnSave"
+	            android:layout_width="wrap_content"
+	            android:layout_height="60dp"
+	            android:layout_alignParentRight="true"
+	            android:onClick="btnsave"
+	            android:text="保存"
+	            android:textSize="20dp" />
+        </RelativeLayout>
+    </FrameLayout>
+    
+     <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="true"
+        android:layout_marginTop="5dp"
+        android:focusableInTouchMode="false"
+        android:background="#CCCCCC"
+        android:visibility="visible"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_margin="1dp"
+        	android:background="#FFFFFF"
+            >
+	        <TextView 
+	            android:id="@+id/tvid"
+				android:background="#FFFFFF"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="10dp"
+	            android:text="*id:"
+	            android:textSize="30dp"
+	            />
+	        <TextView
+	            android:id="@+id/Userid"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+				android:textSize="30dp"
+	            android:layout_alignBottom="@+id/tvid"
+	            android:layout_toRightOf="@+id/tvid" />
+	        
+	     </RelativeLayout>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="#CCCCCC"
+        >
+        <RelativeLayout
+            android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_margin="1dp"
+        	android:background="#FFFFFF"
+            >
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="25dp"
+			android:layout_marginLeft="10dp"
+            android:text="头像"
+            />
+
+			<ImageView
+				android:id="@+id/imgTitle"
+				android:layout_width="62dp"
+				android:layout_height="match_parent"
+				android:layout_alignParentRight="true" />
+			<!--android:src="@mipmap/tou3"-->
+        </RelativeLayout>
+    </LinearLayout>
+    
+    
+   
+    
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="#CCCCCC"
+        >
+        <RelativeLayout
+            android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_margin="1dp"
+        	android:background="#FFFFFF"
+            >
+	        <TextView 
+	            android:id="@+id/tvsignature"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="8dp"
+	            android:text="用户名:"
+	            android:textSize="25dp"
+	            />
+	        
+	        <EditText 
+	            android:id="@+id/etUsername"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:layout_alignBottom="@+id/tvsignature"
+	            android:layout_toRightOf="@+id/tvsignature"
+	            android:background="#FFFFFF"
+	            android:singleLine="true"
+	            android:inputType="none"
+	            android:cursorVisible="false"
+	            /> 
+	            
+	     </RelativeLayout>
+    </LinearLayout>
+    
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="#CCCCCC"
+        >
+        <RelativeLayout
+            android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_margin="1dp"
+        	android:background="#FFFFFF"
+            >
+	        <TextView 
+	            android:id="@+id/names"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginRight="8dp"
+	            android:text="真实姓名:"
+				android:layout_marginLeft="8dp"
+	            android:textSize="25dp"
+	            />
+	        
+	        <EditText 
+	            android:id="@+id/name"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:layout_alignBottom="@+id/names"
+	            android:layout_toRightOf="@+id/names"
+	            android:background="#FFFFFF"
+	            android:singleLine="true"
+	            />
+	     </RelativeLayout>
+    </LinearLayout>
+    
+    
+     <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="true"
+        android:layout_marginTop="40dp"
+        android:focusableInTouchMode="false"
+        android:background="#CCCCCC"
+        >
+        <RelativeLayout
+            android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_margin="1dp"
+        	android:background="#FFFFFF"
+            >
+
+			<TextView
+				android:id="@+id/tvsex"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentTop="true"
+				android:layout_marginTop="0dp"
+				android:layout_marginRight="8dp"
+				android:text="性别:"
+				android:layout_marginLeft="8dp"
+				android:textSize="25dp" />
+	        
+	        <EditText 
+	            android:id="@+id/etSex"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:layout_alignBottom="@+id/tvsex"
+	            android:layout_toRightOf="@+id/tvsex"
+	            android:background="#FFFFFF"
+	            android:onClick="etSex"
+	            android:focusable="false"
+	            android:singleLine="true"
+	            />
+	       
+	     </RelativeLayout>
+    </LinearLayout>
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:includeFontPadding="true"
+		android:layout_marginTop="40dp"
+		android:background="#CCCCCC"
+		>
+		<RelativeLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="1dp"
+			android:background="#FFFFFF"
+			>
+			<TextView
+				android:id="@+id/identify"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginRight="8dp"
+				android:text="*身份:"
+				android:layout_marginLeft="8dp"
+				android:textSize="25dp"
+				/>
+
+			<TextView
+				android:id="@+id/identifys"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_alignBottom="@+id/identify"
+				android:layout_toRightOf="@+id/identify"
+				android:textSize="25dp"
+				android:background="#FFFFFF"
+				android:text="默认普通用户"
+				/>
+		</RelativeLayout>
+	</LinearLayout>
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="true"
+        android:layout_marginTop="40dp"
+        android:background="#CCCCCC"
+        >
+        <RelativeLayout
+            android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_margin="1dp"
+        	android:background="#FFFFFF"
+            >
+	        <TextView 
+	            android:id="@+id/tv_Email"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginRight="8dp"
+	            android:text="Email:"
+				android:layout_marginLeft="8dp"
+	            android:textSize="25dp"
+	            />
+	        
+	        <EditText 
+	            android:id="@+id/E_mail"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:layout_alignBottom="@+id/tv_Email"
+	            android:layout_toRightOf="@+id/tv_Email"
+	            android:background="#FFFFFF"
+	            android:singleLine="true"
+	            android:inputType="textEmailAddress"
+	            android:onClick="E_mail"
+	            />
+	    </RelativeLayout>
+    </LinearLayout>
+
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="true"
+        android:layout_marginTop="40dp"
+        android:background="#CCCCCC"
+        >
+        <RelativeLayout
+            android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_margin="1dp"
+        	android:background="#FFFFFF"
+            >
+
+			<!--<TextView
+				android:id="@+id/tvAddress"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginRight="5dp"
+				android:text="地址:"
+				android:textSize="25dp" />-->
+	        
+	        <!--<EditText
+	            android:id="@+id/Address"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_alignBottom="@+id/tvAddress"
+	            android:layout_toRightOf="@+id/tvAddress"
+	            android:background="#FFFFFF"
+	            android:singleLine="true"
+	            android:onClick="Address"
+	            />-->
+	    </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

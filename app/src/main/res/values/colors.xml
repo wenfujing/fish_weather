@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="textcolor">#fbd390</color>
+    <color name="bgcolor">#F7E5C5</color>
+    <color name="navegatecolor">#a2d0ff</color>
+    <color name="hwtxtreader_styleclor5">#00141f</color>
+
+    <color name="gray">#AAAAAA</color>
+
+    <color name="red">#FF0000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="divide_line">#cccccc</color>
+    <color name="bg_gray">#EEEEEE</color>
+    <color name="black">#000000</color>
+</resources>

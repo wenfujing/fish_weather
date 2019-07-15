@@ -1,0 +1,468 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mywork.myapplication.weather_station.MySetActivity"
+    android:orientation="vertical"
+    >
+
+
+    <!-- 底下的内容都房子V4的包中 -->
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/draw"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ><!-- 主界面 -->
+
+        <RelativeLayout
+            android:id="@+id/relativelayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <FrameLayout
+                android:id="@+id/fltTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <RelativeLayout
+                    android:id="@+id/linear1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/fltTop"
+                    android:layout_alignTop="@+id/fltTop"
+                    android:background="@mipmap/pg4">
+
+                    <ImageView
+                        android:id="@+id/imghead1"
+                        android:layout_width="26dp"
+                        android:layout_height="53dp"
+                        android:src="@mipmap/menu1" />
+                </RelativeLayout>
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/linear2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/fltTop"
+                android:orientation="vertical" >
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/vPager"
+                    android:layout_width="wrap_content"
+                    android:layout_height="605dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.0"
+                    android:background="#000000"
+                    android:flipInterval="30"
+                    android:persistentDrawingCache="animation" />
+
+                <!-- 主页底部线性布局菜单 -->
+
+                <LinearLayout
+                    android:id="@+id/linearLayout1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="51dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/white">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="0dp"
+                        android:background="@color/gray"
+                        >
+
+                        <ImageView
+                            android:id="@+id/mainpage"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:src="@mipmap/mainpage1"
+                            android:gravity="center"
+                            />
+                        <TextView
+                            android:id="@+id/mainpage1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:gravity="center"
+                            android:text="首页"
+                            android:textColor="@color/black"
+                            />
+                        <!--<TextView
+                            android:id="@+id/mainpage"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="0dp"
+                            android:layout_weight="1.0"
+                            android:background="@mipmap/mainpage"
+                            android:button="@null"
+                            android:drawablePadding="4dp"
+                            android:gravity="center"
+                            android:scaleType="fitCenter"
+                            android:text=""
+                            android:textColor="#000000"
+                            android:textSize="12sp" />-->
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="0dp"
+                        android:background="@color/gray"
+                        >
+
+                        <ImageView
+                            android:id="@+id/data"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:src="@mipmap/data"
+                            android:gravity="center"
+                            />
+                        <TextView
+                            android:id="@+id/data1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:gravity="center"
+                            android:text="数据"
+                            android:textColor="@color/black" />
+                        <!--<TextView
+                            android:id="@+id/mainpage"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="0dp"
+                            android:layout_weight="1.0"
+                            android:background="@mipmap/mainpage"
+                            android:button="@null"
+                            android:drawablePadding="4dp"
+                            android:gravity="center"
+                            android:scaleType="fitCenter"
+                            android:text=""
+                            android:textColor="#000000"
+                            android:textSize="12sp" />-->
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="0dp"
+                        android:background="@color/gray"
+                        >
+
+                        <ImageView
+                            android:id="@+id/set"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="0dp"
+                            android:gravity="center"
+                            android:src="@mipmap/set" />
+                        <TextView
+                            android:id="@+id/set1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:gravity="center"
+                            android:text="设置"
+                            android:textColor="@color/black"
+                            />
+                        <!--<TextView
+                            android:id="@+id/mainpage"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="0dp"
+                            android:layout_weight="1.0"
+                            android:background="@mipmap/mainpage"
+                            android:button="@null"
+                            android:drawablePadding="4dp"
+                            android:gravity="center"
+                            android:scaleType="fitCenter"
+                            android:text=""
+                            android:textColor="#000000"
+                            android:textSize="12sp" />-->
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="0dp"
+                        android:background="@color/gray"
+                        >
+
+                        <ImageView
+                            android:id="@+id/community"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:gravity="center"
+                            android:src="@mipmap/personal01" />
+                        <TextView
+                            android:id="@+id/community1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:gravity="center"
+                            android:text="社区"
+                            android:textColor="@color/black"
+                            />
+                        <!--<TextView
+                            android:id="@+id/mainpage"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="0dp"
+                            android:layout_weight="1.0"
+                            android:background="@mipmap/mainpage"
+                            android:button="@null"
+                            android:drawablePadding="4dp"
+                            android:gravity="center"
+                            android:scaleType="fitCenter"
+                            android:text=""
+                            android:textColor="#000000"
+                            android:textSize="12sp" />-->
+                    </RelativeLayout>
+                    <!--<TextView
+                        android:id="@+id/data"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1.0"
+                        android:background="@mipmap/date1"
+                        android:gravity="center"
+                        android:scaleType="centerInside"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="22.0dip" />
+
+                    <TextView
+                        android:id="@+id/set"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1.0"
+                        android:background="@mipmap/setable"
+                        android:gravity="center"
+                        android:scaleType="centerInside"
+                        android:text=""
+                        android:textColor="#D11C1C"
+                        android:textSize="22.0dip" />
+
+                    <TextView
+                        android:id="@+id/community"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+
+                        android:layout_weight="1.0"
+                        android:background="@mipmap/personal1"
+                        android:gravity="center"
+                        android:scaleType="centerInside"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="22.0dip" />-->
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!-- 侧滑界面 -->
+
+        <LinearLayout
+            android:id="@+id/linearlayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:background="#FFFFFF"
+            android:orientation="vertical" >
+
+            <!-- android:background="@drawable/bg_border" -->
+
+            <RelativeLayout
+                android:id="@+id/rlt_Bg"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@mipmap/beijing1"
+                android:orientation="vertical" >
+
+                <!-- 点击图片头像进行获取头像 -->
+
+               <!-- <ImageView
+                    android:id="@+id/imgheadce"
+                    android:layout_width="70dp"
+                    android:layout_height="80dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:padding="3dp"
+                    android:src="@mipmap/tou01">
+                    &lt;!&ndash; <ImageView
+		    android:id="@+id/imghead2"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerInParent="true"
+		    android:src="@mipmap/tou01"
+		    />&ndash;&gt;
+
+
+                </ImageView>-->
+            </RelativeLayout>
+
+            <!-- 第一个框 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/imagepeople"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center"
+                        android:background="@mipmap/personaldate" />
+
+                    <TextView
+                        android:id="@+id/personalData"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/imagepeople"
+                        android:text="个人资料"
+                        android:textSize="30dp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0.5dp"
+                android:background="#000000" />
+
+            <!-- 第二个框 -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp" >
+
+                    <ImageView
+                        android:id="@+id/imgMyfish"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:background="@mipmap/add" />
+
+                    <TextView
+                        android:id="@+id/tvWeather_station"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/imgMyfish"
+                        android:text="添加设备"
+                        android:textSize="30dp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0.5dp"
+                android:background="#000000" />
+            <!-- 第三个框 -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                >
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/changeuser"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:background="@mipmap/setpeople" />
+
+                    <TextView
+                        android:id="@+id/changeUser"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/changeuser"
+                        android:text="修改用户"
+                        android:textSize="30dp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0.5dp"
+                android:background="#000000" />
+
+
+          <!--  &lt;!&ndash; 第四个框 &ndash;&gt;
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/mysetup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/setup" />
+                    <TextView
+                        android:id="@+id/tvSet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/mysetup"
+                        android:text="我的设置"
+                        android:textSize="30dp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0.5dp"
+                android:background="#000000" />-->
+            <!-- 第5个框 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/exit"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:background="@mipmap/exit" />
+
+                    <TextView
+                        android:id="@+id/exitLogin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/exit"
+                        android:text="退出登录"
+                        android:textSize="30dp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0.5dp"
+                android:background="#000000" />
+        </LinearLayout>
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>

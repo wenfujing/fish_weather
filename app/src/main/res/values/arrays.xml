@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ftype">
+        <item>气象站分类</item>
+        <item>森林防火观测站</item>
+        <item>气候观测站</item>
+        <item>地面天气观测站</item>
+        <item>高空观测站</item>
+        <item>航空天气观测站</item>
+        <item>农业气象观测站</item>
+        <item>太阳辐射观测站</item>
+        <item>天气雷达观测站</item>
+        <item>卫星云图接收站</item>
+        <item>大气污染观测站</item>
+    </string-array>
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/bg">
+
+<TextView
+    android:layout_marginTop="20dp"
+    android:textSize="20px"
+    android:text="登录成功"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+<ImageView android:id="@+id/ItemImage"
+    android:layout_width="75dp"
+    android:layout_height="75dp"
+    android:layout_gravity="center"
+    android:scaleType="fitXY"
+    android:padding="4dp"
+    />
+<TextView android:id="@+id/ItemTitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center_horizontal"
+    />
+
+<Button
+    android:textSize="10dp"
+    android:layout_centerInParent="true"
+    android:text="点击返回登录页面"
+    android:onClick="click"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+</LinearLayout>

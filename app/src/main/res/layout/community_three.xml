@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#99ccff"
+	android:orientation="vertical">
+
+
+
+	<ImageButton
+		android:id="@+id/touxiang"
+		android:layout_width="88dp"
+		android:layout_height="88dp"
+		android:layout_centerHorizontal="true"
+		android:layout_marginStart="40dp"
+		android:layout_marginLeft="40dp"
+		android:layout_marginEnd="232dp"
+		android:layout_marginRight="232dp"
+		android:layout_marginBottom="387dp"
+		android:background="@mipmap/test"
+		android:padding="0dp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.0"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias="0.0" />
+
+	<Button
+		android:id="@+id/xiugai"
+		android:layout_width="32dp"
+		android:layout_height="32dp"
+		android:layout_marginStart="320dp"
+		android:layout_marginLeft="320dp"
+		android:layout_marginTop="15dp"
+		android:background="@mipmap/touxiang"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/touxiang" />
+
+	<View
+		android:id="@+id/view5"
+		android:layout_width="349dp"
+		android:layout_height="1dp"
+		android:layout_alignParentStart="true"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentTop="true"
+		android:layout_marginStart="32dp"
+		android:layout_marginLeft="32dp"
+		android:layout_marginTop="50dp"
+		android:background="#cecece"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/touxiang"></View>
+
+	<!--<View
+		android:id="@+id/view6"
+		android:layout_width="349dp"
+		android:layout_height="1dp"
+		android:layout_alignParentStart="true"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentTop="true"
+		android:layout_marginStart="28dp"
+		android:layout_marginLeft="28dp"
+		android:layout_marginTop="248dp"
+		android:background="#cecece"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"></View>-->
+
+	<!--<View
+		android:id="@+id/book_img1"
+		android:layout_width="349dp"
+		android:layout_height="1dp"
+		android:layout_alignParentStart="true"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentTop="true"
+		android:layout_marginStart="28dp"
+		android:layout_marginLeft="28dp"
+		android:layout_marginTop="295dp"
+		android:background="#cecece"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"></View>
+
+	<View
+		android:id="@+id/view3"
+		android:layout_width="349dp"
+		android:layout_height="1dp"
+		android:layout_alignParentStart="true"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentTop="true"
+		android:layout_marginStart="28dp"
+		android:layout_marginLeft="28dp"
+		android:layout_marginTop="344dp"
+		android:background="#cecece"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"></View>
+
+
+	<View
+		android:id="@+id/book_img2"
+		android:layout_width="349dp"
+		android:layout_height="1dp"
+		android:layout_alignParentStart="true"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentTop="true"
+		android:layout_marginStart="28dp"
+		android:layout_marginLeft="28dp"
+		android:layout_marginTop="440dp"
+		android:background="#cecece"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"></View>
+
+	<View
+		android:id="@+id/view7"
+		android:layout_width="349dp"
+		android:layout_height="1dp"
+		android:layout_alignParentStart="true"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentTop="true"
+		android:layout_marginStart="28dp"
+		android:layout_marginTop="344dp"
+		android:background="#cecece"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"></View>-->
+
+	<!--<Button
+		android:id="@+id/friends"
+		android:layout_width="452dp"
+		android:layout_height="45dp"
+		android:layout_marginTop="250dp"
+		android:background="#ffffff"
+		android:gravity="center_vertical"
+		android:paddingLeft="15dip"
+		android:text="               我的好友"
+		android:textColor="#666666"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.5"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+
+	<Button
+		android:id="@+id/history"
+		android:layout_width="452dp"
+		android:layout_height="45dp"
+		android:layout_marginTop="297dp"
+		android:background="#ffffff"
+		android:gravity="center_vertical"
+		android:paddingLeft="15dip"
+		android:text="               浏览记录"
+		android:textColor="#666666"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.5"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />-->
+
+	<Button
+		android:id="@+id/create"
+		android:layout_width="452dp"
+		android:layout_height="48dp"
+		android:layout_marginTop="240dp"
+		android:background="#ffffff"
+		android:gravity="center_vertical"
+		android:paddingLeft="15dip"
+		android:text="               备忘录"
+		android:textColor="#666666"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.048"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+
+	<Button
+		android:id="@+id/button5"
+		android:layout_width="452dp"
+		android:layout_height="45dp"
+		android:layout_marginTop="356dp"
+		android:background="#ffffff"
+		android:gravity="center_vertical"
+		android:layout_marginBottom="@android:dimen/thumbnail_height"
+		android:paddingLeft="15dip"
+		android:text="               联系我们"
+		android:textColor="#666666"
+		app:layout_constraintBottom_toTopOf="@+id/book_img2"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.024"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias="1.0" />
+
+	<Button
+
+		android:id="@+id/setting"
+		android:layout_width="452dp"
+		android:layout_height="42dp"
+		android:layout_marginTop="300dp"
+		android:background="#ffffff"
+		android:gravity="center_vertical"
+		android:paddingLeft="15dip"
+		android:src="@mipmap/toleft"
+		android:text="               个人设置"
+		android:textColor="#666666"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.024"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+
+	<TextView
+		android:id="@+id/textView2"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="70dp"
+		android:layout_marginLeft="70dp"
+		android:layout_marginTop="15dp"
+		android:text="Vip10"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/touxiang" />
+
+	<TextView
+		android:id="@+id/textView3"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="160dp"
+		android:layout_marginLeft="160dp"
+		android:layout_marginTop="15dp"
+		android:text="巾帼英雄"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/touxiang" />
+</android.support.constraint.ConstraintLayout>

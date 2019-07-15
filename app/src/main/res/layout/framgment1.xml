@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/Search"
+                    android:layout_width="248dp"
+                    android:layout_height="44dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="16dp"
+                    android:hint="搜索"
+                    android:outlineAmbientShadowColor="@android:color/black"
+                    android:outlineSpotShadowColor="@android:color/black"
+                    android:selectAllOnFocus="false"
+                    android:shadowColor="@android:color/black"
+                    android:singleLine="false"
+                    android:textColor="@android:color/black"
+                    android:textColorHighlight="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:textColorLink="@android:color/black"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:outlineAmbientShadowColor="@android:color/black"
+                    tools:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/Advancedsearch"
+                    android:layout_width="107dp"
+                    android:layout_height="44dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:text="高级搜索"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </LinearLayout>
+
+            <!-- <com.lzp.looppager.LoopPager
+            android:id="@+id/loopPager"
+            android:layout_width="match_parent"
+            android:layout_height="202dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />-->
+            <!-- 巧渔智渔，气象站模块-->
+            <!-- <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <GridView
+                android:id="@+id/gvInfo"
+                android:layout_width="fill_parent"
+                android:layout_height="373dp"
+                android:columnWidth="100dp"
+                android:gravity="center"
+                android:horizontalSpacing="10dp"
+                android:numColumns="auto_fit"
+                android:stretchMode="spacingWidthUniform"
+                android:verticalSpacing="10dp" />
+        </LinearLayout>-->
+
+          <!--  <TextView
+                android:id="@+id/List"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="13dp"
+                android:text="最新"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/loopPager" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <LinearLayout
+                    android:layout_width="265dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/l7"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/btnfish"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/fish" />
+
+                        <TextView
+                            android:id="@+id/text7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginBottom="0dp"
+                            android:layout_toRightOf="@id/btnfish"
+                            android:gravity="center_vertical"
+                            android:text="渔林项目一"
+                            android:textColor="@color/black"
+                            android:textSize="15dp" />
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="265dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/l10"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/btnws"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/weater" />
+
+                        <TextView
+                            android:id="@+id/text10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="0dp"
+                            android:layout_toRightOf="@id/btnws"
+                            android:gravity="center_vertical"
+                            android:text="气象站项目二"
+                            android:textSize="15dp"
+                            android:textColor="@color/black"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </LinearLayout>-->
+
+            <TextView
+                android:id="@+id/Recommend"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="8dp"
+                android:gravity="left"
+                android:left="25dp"
+                android:text="新产品"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:top="368dp" />
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+
+                <com.mywork.myapplication.common.url_imgview
+                    android:id="@+id/article_img1"
+                    android:layout_width="144dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="8dp"
+                    android:left="20dp"
+                    android:radius="0dp"
+                    android:src="@mipmap/car"
+                    android:top="398dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/article_name1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:gravity="left"
+                    android:left="178dp"
+                    android:text="设备介绍:            农业收割机，一次性完成收割、脱粒，"
+                    android:textSize="14sp"
+                    android:top="400dp"
+                    app:layout_constraintStart_toEndOf="@+id/article_img1"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/article_author1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="18dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="6dp"
+                    android:gravity="left"
+                    android:left="178dp"
+                    android:text="发明家:                  塞勒斯·麦考密克"
+                    android:textSize="12sp"
+                    android:top="432dp"
+                    app:layout_constraintStart_toEndOf="@+id/article_img1"
+                    app:layout_constraintTop_toBottomOf="@+id/article_name1" />
+
+                <TextView
+                    android:id="@+id/article_hot1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="15dp"
+                    android:gravity="left"
+                    android:left="178dp"
+                    android:text="21.3k"
+                    android:textSize="12sp"
+                    android:top="458dp"
+                    app:layout_constraintStart_toEndOf="@+id/article_img1"
+                    app:layout_constraintTop_toBottomOf="@+id/article_author1" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="24dp"
+                    android:layout_height="33dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/smallfire"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/article_hot1"
+                    tools:srcCompat="@drawable/smallfire" />
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintEnd_toEndOf="parent">
+
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="24dp"
+                    android:layout_height="33dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/smallfire"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/article_hot2"
+                    tools:srcCompat="@drawable/smallfire" />
+
+                <com.mywork.myapplication.common.url_imgview
+                    android:id="@+id/article_img2"
+                    android:layout_width="144dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:left="20dp"
+                    android:radius="0dp"
+                    android:src="@mipmap/ws"
+                    android:top="398dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/article_name2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="left"
+                    android:left="178dp"
+                    android:text="设备介绍:         自动化气象站，建设的能够自动探测多个要素，无需人工干预"
+                    android:textSize="14sp"
+                    android:top="400dp"
+                    app:layout_constraintStart_toEndOf="@+id/article_img2"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/article_author2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="18dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="left"
+                    android:left="178dp"
+                    android:text="发明家：                   大众智慧"
+                    android:textSize="12sp"
+                    android:top="432dp"
+                    app:layout_constraintStart_toEndOf="@+id/article_img2"
+                    app:layout_constraintTop_toBottomOf="@+id/article_name2" />
+
+                <TextView
+                    android:id="@+id/article_hot2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="left"
+                    android:left="178dp"
+                    android:text="11.6k"
+                    android:textSize="12sp"
+                    android:top="458dp"
+                    app:layout_constraintStart_toStartOf="@+id/article_author2"
+                    app:layout_constraintTop_toBottomOf="@+id/article_author2" />
+            </android.support.constraint.ConstraintLayout>
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintEnd_toEndOf="parent">
+
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="24dp"
+                    android:layout_height="33dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/smallfire"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/article_hot2"
+                    tools:srcCompat="@drawable/smallfire" />
+
+                <com.mywork.myapplication.common.url_imgview
+                    android:id="@+id/article_img3"
+                    android:layout_width="144dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:left="20dp"
+                    android:radius="0dp"
+                    android:src="@mipmap/fish1"
+                    android:top="398dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/article_name3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="left"
+                    android:left="178dp"
+                    android:text="设备介绍:         嵌入式鱼缸，室内观赏，嵌入式系统管理，智能化饲养"
+                    android:textSize="14sp"
+                    android:top="400dp"
+                    app:layout_constraintStart_toEndOf="@+id/article_img3"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/article_author3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="18dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="left"
+                    android:left="178dp"
+                    android:text="发明家：                   大众智慧"
+                    android:textSize="12sp"
+                    android:top="432dp"
+                    app:layout_constraintStart_toEndOf="@+id/article_img3"
+                    app:layout_constraintTop_toBottomOf="@+id/article_name3" />
+
+                <TextView
+                    android:id="@+id/article_hot3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="left"
+                    android:left="178dp"
+                    android:text="31.4k"
+                    android:textSize="12sp"
+                    android:top="458dp"
+                    app:layout_constraintStart_toStartOf="@+id/article_author3"
+                    app:layout_constraintTop_toBottomOf="@+id/article_author3" />
+            </android.support.constraint.ConstraintLayout>
+            <TextView
+                android:id="@+id/book"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="8dp"
+                android:gravity="left"
+                android:left="25dp"
+                android:text="相关开发文档"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:top="368dp" />
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="fill_parent"
+                android:layout_height="160dp"
+                android:layout_marginBottom="16dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <com.mywork.myapplication.common.url_imgview
+                    android:id="@+id/book_img1"
+                    android:layout_width="84dp"
+                    android:layout_height="112dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="8dp"
+                    android:left="20dp"
+                    android:radius="0dp"
+                    android:src="@mipmap/service"
+                    android:top="622dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/book_name1"
+                    android:layout_width="84dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="124dp"
+                    android:gravity="center"
+                    android:left="48dp"
+                    android:text="服务器"
+                    android:textSize="14sp"
+                    android:top="742dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/book_img1" />
+
+                <com.mywork.myapplication.common.url_imgview
+                    android:id="@+id/book_img3"
+                    android:layout_width="84dp"
+                    android:layout_height="112dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:left="140dp"
+                    android:radius="0dp"
+                    android:src="@mipmap/app"
+                    android:top="622dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/book_name2"
+                    android:layout_width="84dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="128dp"
+                    android:gravity="center"
+                    android:left="154dp"
+                    android:text="前端"
+                    android:textSize="14sp"
+                    android:top="742dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.mywork.myapplication.common.url_imgview
+                    android:id="@+id/book_img2"
+                    android:layout_width="84dp"
+                    android:layout_height="112dp"
+                    android:layout_marginTop="8dp"
+                    android:left="260dp"
+                    android:radius="0dp"
+                    android:src="@mipmap/font2"
+                    android:top="622dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/book_name3"
+                    android:layout_width="84dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="128dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:left="267dp"
+                    android:text="app"
+                    android:textSize="14sp"
+                    android:top="742dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </android.support.constraint.ConstraintLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

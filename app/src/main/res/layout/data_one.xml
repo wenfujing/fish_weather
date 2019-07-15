@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+	android:background="@mipmap/test2"
+    >
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="30dp"
+		>
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			>
+
+
+			<ImageView
+				android:id="@+id/imgGood"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@mipmap/haoyou"
+				/>
+
+			<ImageView
+				android:id="@+id/imgExpert"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:src="@mipmap/expert01"
+				/>
+
+		</RelativeLayout>
+	</LinearLayout>
+
+//id
+	<LinearLayout
+		android:layout_marginTop="10dp"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:visibility="visible">
+
+		<TextView
+			android:id="@+id/tvId"
+			android:layout_width="wrap_content"
+			android:text="气象站数据展示"
+			android:textSize="30dp"
+			android:textColor="@color/black"
+			android:layout_height="wrap_content" />
+	</LinearLayout>
+<!--//数据展示温度-->
+	<LinearLayout
+	android:layout_width="match_parent"
+	android:layout_height="48dp"
+	android:orientation="horizontal"
+	android:paddingTop="2dp"
+	android:paddingBottom="2dp"
+	android:layout_marginTop="20dp"
+	android:layout_marginLeft="10dp"
+	android:layout_marginRight="10dp">
+
+	<LinearLayout
+		android:layout_width="265dp"
+		android:layout_height="match_parent"
+		android:layout_weight="1"
+		android:orientation="horizontal">
+
+		<RelativeLayout
+			android:id="@+id/l1"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+			<ImageView
+				android:id="@+id/dateimg1"
+				android:layout_width="40dp"
+				android:layout_height="wrap_content"
+				android:src="@mipmap/air_temper" />
+
+			<TextView
+				android:id="@+id/text1"
+				android:layout_width="80dp"
+				android:layout_height="match_parent"
+				android:layout_alignParentBottom="true"
+				android:layout_toRightOf="@id/dateimg1"
+				android:gravity="center_vertical"
+				android:text="空气温度值(℃):"
+				android:textSize="15dp" />
+			<TextView
+				android:id="@+id/textair_temper"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_toRightOf="@+id/text1"
+				android:gravity="center"
+				android:textColor="@color/colorPrimary"/>
+		</RelativeLayout>
+
+	</LinearLayout>
+	<!--//土壤湿度-->
+	<LinearLayout
+		android:layout_width="265dp"
+		android:layout_height="match_parent"
+		android:layout_weight="1"
+		android:orientation="horizontal">
+
+		<RelativeLayout
+			android:id="@+id/l2"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+			<ImageView
+				android:id="@+id/dateimg2"
+				android:layout_width="40dp"
+				android:layout_height="wrap_content"
+				android:src="@mipmap/soil_temper" />
+
+			<TextView
+				android:id="@+id/text2"
+				android:layout_width="80dp"
+				android:layout_height="match_parent"
+				android:layout_alignParentBottom="true"
+				android:layout_marginLeft="0dp"
+				android:layout_toRightOf="@id/dateimg2"
+				android:gravity="center_vertical"
+				android:text="土壤温度值(℃)："
+				android:textSize="15dp" />
+			<TextView
+				android:id="@+id/textsoil_temper"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_toRightOf="@+id/text2"
+				android:gravity="center"
+				android:textColor="@color/colorPrimary"/>
+		</RelativeLayout>
+
+
+		<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:background="#F7F1F1">
+
+		</LinearLayout>
+		//土壤湿度
+
+	</LinearLayout>
+</LinearLayout>
+	<!--//数据展示湿度-->
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="48dp"
+		android:orientation="horizontal"
+		android:paddingTop="2dp"
+		android:paddingBottom="2dp"
+		android:layout_marginTop="10dp"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp">
+
+		<LinearLayout
+			android:layout_width="265dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:orientation="horizontal">
+
+			<RelativeLayout
+				android:id="@+id/l3"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+
+				<ImageView
+					android:id="@+id/dateimg3"
+					android:layout_width="40dp"
+					android:layout_height="wrap_content"
+					android:src="@mipmap/air_templa" />
+
+				<TextView
+					android:id="@+id/text3"
+					android:layout_width="80dp"
+					android:layout_height="match_parent"
+					android:layout_alignParentBottom="true"
+					android:layout_toRightOf="@id/dateimg3"
+					android:gravity="center_vertical"
+					android:text="空气湿度(%RH):"
+					android:textSize="15dp" />
+				<TextView
+					android:id="@+id/textair_templa"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_toRightOf="@+id/text3"
+					android:gravity="center"
+					android:textColor="@color/colorPrimary"/>
+			</RelativeLayout>
+
+
+		</LinearLayout>
+		<!--//土壤湿度-->
+		<LinearLayout
+			android:layout_width="265dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:orientation="horizontal">
+
+			<RelativeLayout
+				android:id="@+id/l4"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+
+				<ImageView
+					android:id="@+id/dateimg4"
+					android:layout_width="40dp"
+					android:layout_height="wrap_content"
+					android:src="@mipmap/soil_templa" />
+
+				<TextView
+					android:id="@+id/text4"
+					android:layout_width="80dp"
+					android:layout_height="match_parent"
+					android:layout_alignParentBottom="true"
+					android:layout_marginLeft="0dp"
+					android:layout_toRightOf="@id/dateimg4"
+					android:gravity="center_vertical"
+					android:text="土壤湿度%RH："
+					android:textSize="15dp" />
+				<TextView
+					android:id="@+id/textsoil_templa"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_toRightOf="@+id/text4"
+					android:gravity="center"
+					android:textColor="@color/colorPrimary"/>
+			</RelativeLayout>
+		</LinearLayout>
+	</LinearLayout>
+	<!--//数据展示氧气、降雨量-->
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="48dp"
+		android:orientation="horizontal"
+		android:paddingTop="2dp"
+		android:paddingBottom="2dp"
+		android:layout_marginTop="10dp"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp">
+
+		<LinearLayout
+			android:layout_width="265dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:orientation="horizontal">
+
+			<RelativeLayout
+				android:id="@+id/l5"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+
+				<ImageView
+					android:id="@+id/dateimg5"
+					android:layout_width="40dp"
+					android:layout_height="wrap_content"
+					android:src="@mipmap/oxgen" />
+
+				<TextView
+					android:id="@+id/text5"
+					android:layout_width="80dp"
+					android:layout_height="match_parent"
+					android:layout_alignParentBottom="true"
+					android:layout_toRightOf="@id/dateimg5"
+					android:gravity="center_vertical"
+					android:text="氧气浓度(%)："
+					android:textSize="15dp" />
+				<TextView
+					android:id="@+id/textoxygen"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_toRightOf="@id/text5"
+					android:gravity="center"
+					android:textColor="@color/colorPrimary"/>
+			</RelativeLayout>
+
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:background="#FFFFFF">
+
+
+			</LinearLayout>
+
+		</LinearLayout>
+		<!--//土壤湿度-->
+		<LinearLayout
+			android:layout_width="265dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:orientation="horizontal">
+
+			<RelativeLayout
+				android:id="@+id/l6"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+
+				<ImageView
+					android:id="@+id/dateimg6"
+					android:layout_width="40dp"
+					android:layout_height="wrap_content"
+					android:src="@mipmap/waterlevel" />
+
+				<TextView
+					android:id="@+id/text6"
+					android:layout_width="80dp"
+					android:layout_height="match_parent"
+					android:layout_alignParentBottom="true"
+					android:layout_marginLeft="0dp"
+					android:layout_marginBottom="2dp"
+					android:layout_toRightOf="@id/dateimg6"
+					android:gravity="center_vertical"
+					android:text="降雨量(mm)："
+					android:textSize="15dp" />
+				<TextView
+					android:id="@+id/textwaterlevel"
+					android:layout_toRightOf="@+id/text6"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:gravity="center"
+					android:textColor="@color/colorPrimary"/>
+			</RelativeLayout>
+
+			<!--<LinearLayout-->
+				<!--android:layout_width="wrap_content"-->
+				<!--android:layout_height="match_parent"-->
+				<!--android:layout_weight="1"-->
+				<!--android:background="#F7F1F1">-->
+
+				<!--<TextView-->
+					<!--android:id="@+id/textwaterlevel"-->
+					<!--android:text="123"-->
+					<!--android:layout_width="match_parent"-->
+					<!--android:layout_height="wrap_content"-->
+					<!--android:gravity="center" />-->
+			<!--</LinearLayout>-->
+		</LinearLayout>
+	</LinearLayout>
+	<!--//数据展示光照、压强-->
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="48dp"
+		android:orientation="horizontal"
+		android:paddingTop="2dp"
+		android:paddingBottom="2dp"
+		android:layout_marginTop="10dp"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp">
+
+		<LinearLayout
+			android:layout_width="265dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:orientation="horizontal">
+
+			<RelativeLayout
+				android:id="@+id/l7"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+
+				<ImageView
+					android:id="@+id/dateimg7"
+					android:layout_width="40dp"
+					android:layout_height="wrap_content"
+					android:src="@mipmap/light" />
+
+				<TextView
+					android:id="@+id/text7"
+					android:layout_width="80dp"
+					android:layout_height="match_parent"
+					android:layout_alignParentBottom="true"
+					android:layout_toRightOf="@id/dateimg7"
+					android:gravity="center_vertical"
+					android:text="光照(Lux)："
+					android:textSize="15dp" />
+				<TextView
+					android:id="@+id/textlight"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_toRightOf="@+id/text7"
+					android:gravity="center"
+					android:textColor="@color/colorPrimary"/>
+			</RelativeLayout>
+
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="265dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:orientation="horizontal">
+
+			<RelativeLayout
+				android:id="@+id/l10"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+
+				<ImageView
+					android:id="@+id/dateimg10"
+					android:layout_width="40dp"
+					android:layout_height="wrap_content"
+					android:src="@mipmap/pressure" />
+
+				<TextView
+					android:id="@+id/text10"
+					android:layout_width="80dp"
+					android:layout_height="match_parent"
+					android:layout_alignParentBottom="true"
+					android:layout_marginLeft="0dp"
+					android:layout_toRightOf="@id/dateimg10"
+					android:gravity="center_vertical"
+					android:text="压强(hpa)："
+					android:textSize="15dp" />
+				<TextView
+					android:id="@+id/textpressure"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_toRightOf="@id/text10"
+					android:gravity="center"
+					android:textColor="@color/colorPrimary"/>
+			</RelativeLayout>
+
+		</LinearLayout>
+	</LinearLayout>
+	<!--//数据展示风向、风速-->
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="48dp"
+		android:orientation="horizontal"
+		android:paddingTop="2dp"
+		android:paddingBottom="2dp"
+		android:layout_marginTop="10dp"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp">
+
+		<LinearLayout
+			android:layout_width="265dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:orientation="horizontal">
+
+			<RelativeLayout
+				android:id="@+id/l8"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+
+				<ImageView
+					android:id="@+id/dateimg8"
+					android:layout_width="40dp"
+					android:layout_height="wrap_content"
+					android:src="@mipmap/wind_speed" />
+
+				<TextView
+					android:id="@+id/text8"
+					android:layout_width="80dp"
+					android:layout_height="match_parent"
+					android:layout_alignParentBottom="true"
+					android:layout_marginLeft="0dp"
+					android:layout_marginBottom="3dp"
+					android:layout_toRightOf="@id/dateimg8"
+					android:gravity="center_vertical"
+					android:text="风速(m/s)："
+					android:textSize="15dp" />
+				<TextView
+					android:id="@+id/textwind_speed"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_toRightOf="@id/text8"
+					android:gravity="center"
+					android:textColor="@color/colorPrimary"/>
+			</RelativeLayout>
+
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="265dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:orientation="horizontal">
+
+			<RelativeLayout
+				android:id="@+id/l9"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+
+				<ImageView
+					android:id="@+id/dateimg9"
+					android:layout_width="40dp"
+					android:layout_height="wrap_content"
+					android:src="@mipmap/wind_direction" />
+
+				<TextView
+					android:id="@+id/text9"
+					android:layout_width="80dp"
+					android:layout_height="match_parent"
+					android:layout_alignParentBottom="true"
+					android:layout_marginLeft="0dp"
+					android:layout_toRightOf="@id/dateimg9"
+					android:gravity="center_vertical"
+					android:text="风向(°)："
+					android:textSize="15dp" />
+				<TextView
+					android:id="@+id/textwind_direction"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_toRightOf="@+id/text9"
+					android:gravity="center"
+					android:textColor="@color/colorPrimary"/>
+			</RelativeLayout>
+
+		</LinearLayout>
+	</LinearLayout>
+	//数据图和刷新
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="48dp"
+		android:orientation="horizontal"
+		android:paddingTop="0dp"
+		android:paddingBottom="0dp"
+		android:layout_marginTop="30dp"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+		android:background="#E9EAEE">
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:layout_margin="2dp"
+			android:background="@color/gray"
+			>
+			<ImageView
+				android:id="@+id/fish"
+				android:layout_width="match_parent"
+				android:layout_height="30dp"
+				android:src="@mipmap/date"
+				android:gravity="center"
+				/>
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_alignParentBottom="true"
+				android:gravity="center"
+				android:text="进入渔林"
+				android:textColor="@color/black"
+				/>
+		</RelativeLayout>
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:layout_margin="2dp"
+			android:background="@color/gray"
+			>
+
+			<ImageView
+				android:id="@+id/img_with_new"
+				android:layout_width="match_parent"
+				android:layout_height="30dp"
+				android:layout_weight="1"
+				android:foregroundGravity="center"
+				android:src="@mipmap/flash" />
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_alignParentBottom="true"
+				android:gravity="center"
+				android:text="刷新数据"
+				android:textColor="@color/black"
+				/>
+		</RelativeLayout>
+	</LinearLayout>
+</LinearLayout>
